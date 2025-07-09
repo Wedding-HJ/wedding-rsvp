@@ -37,20 +37,50 @@
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
     }
-    .btn-rsvp {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 2rem;
+    .rsvp-section {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .rsvp-section h2 {
+      font-size: 2rem;
+      color: #b34a6c;
+    }
+    .rsvp-section p {
       font-size: 1.1rem;
-      background: #d891b3;
-      border: none;
-      color: white;
+      margin-bottom: 1.5rem;
+    }
+    .rsvp-form {
+      display: inline-block;
+      text-align: left;
+      background: rgba(255,255,255,0.9);
+      padding: 2rem;
       border-radius: 8px;
-      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+    .rsvp-form input,
+    .rsvp-form select {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .rsvp-form button {
+      width: 100%;
+      padding: 0.75rem;
+      background: #b34a6c;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      cursor: pointer;
       transition: background 0.3s;
     }
-    .btn-rsvp:hover {
-      background: #c87da2;
+    .rsvp-form button:hover {
+      background: #9a3e5a;
     }
   </style>
 </head>
@@ -61,13 +91,38 @@
     <p>親愛的朋友們，我們誠摯地邀請您見證我們的婚禮，與我們一同分享這份喜悅。</p>
     <p><strong>婚禮日期：</strong>2025年11月16日（星期日）中午12點</p>
     <p><strong>地點：</strong>台中市 Palazzo</p>
-    <a href="#rsvp" class="btn-rsvp">立即回覆</a>
   </section>
 
-  <section id="rsvp" style="text-align: center; margin-top: 3rem;">
+  <section class="rsvp-section">
     <h2>RSVP（回覆）</h2>
     <p>請填寫以下表單，讓我們知道您是否能夠出席我們的婚禮。</p>
-    <!-- 在此處嵌入您的 RSVP 表單代碼 -->
+    <form class="rsvp-form" action="YOUR_FORM_HANDLER_URL" method="POST">
+      <label for="name">您的姓名：</label>
+      <input type="text" id="name" name="name" required placeholder="請輸入您的姓名">
+
+      <label for="attending">是否出席：</label>
+      <select id="attending" name="attending" required>
+        <option value="">請選擇</option>
+        <option value="yes">是的，我會出席</option>
+        <option value="no">抱歉，我無法出席</option>
+      </select>
+
+      <label for="guests">是否攜伴：</label>
+      <select id="guests" name="guests">
+        <option value="no">不攜伴</option>
+        <option value="yes">是的，我會攜伴</option>
+      </select>
+
+      <label for="meal">餐點選擇：</label>
+      <select id="meal" name="meal" required>
+        <option value="">請選擇</option>
+        <option value="chicken">雞肉</option>
+        <option value="beef">牛肉</option>
+        <option value="vegetarian">素食</option>
+      </select>
+
+      <button type="submit">提交回覆</button>
+    </form>
   </section>
 </body>
 </html>
