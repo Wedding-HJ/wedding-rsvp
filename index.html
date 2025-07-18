@@ -37,9 +37,11 @@
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
     }
+    .btn-group {
+      margin-top: 1.5rem;
+    }
     .btn-rsvp {
       display: inline-block;
-      margin-top: 1.5rem;
       padding: 0.75rem 2rem;
       font-size: 1.1rem;
       background: #d891b3;
@@ -48,12 +50,11 @@
       border-radius: 8px;
       text-decoration: none;
       transition: background 0.3s;
+      margin: 0.5rem;
     }
     .btn-rsvp:hover {
       background: #c87da2;
     }
-    <a href="directions.html" class="btn-rsvp" style="margin-left: 1rem;">查看地點</a>
-
   </style>
 </head>
 <body>
@@ -63,7 +64,11 @@
     <p>親愛的朋友們，我們誠摯地邀請您見證我們的婚禮，與我們一同分享這份喜悅。</p>
     <p><strong>婚禮日期：</strong>2025年11月16日（星期日）中午12點</p>
     <p><strong>地點：</strong>台中市 Palazzo</p>
-    <a href="rsvp.html" class="btn-rsvp">立即回覆</a>
+
+    <div class="btn-group">
+      <a href="rsvp.html" class="btn-rsvp">立即回覆</a>
+      <a href="directions.html" class="btn-rsvp">查看地點</a>
+    </div>
   </section>
 </body>
 </html>
