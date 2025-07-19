@@ -13,30 +13,59 @@
       padding: 2rem;
       margin: 0;
     }
+    .hero {
+      text-align: center;
+      background: rgba(255,255,255,0.85);
+      padding: 3rem 1rem;
+      border-radius: 12px;
+      max-width: 760px;
+      margin: auto;
+    }
     h1.hero-title {
       font-family: 'Playfair Display', serif;
       font-size: 3.5rem;
       color: #b34a6c;
       margin-bottom: 0.5rem;
     }
-    /* If you want to keep Zhi Mang Xing for Chinese accent text */
     .chinese-accent {
       font-family: 'Zhi Mang Xing', cursive;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       display: block;
       color: #b34a6c;
+      margin-bottom: 1.2rem;
     }
-    /* Other styles ... */
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .btn-group {
+      margin-top: 1.5rem;
+    }
+    .btn-rsvp {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      font-size: 1.1rem;
+      background: #d4af37; /* gold */
+      border: none;
+      color: black;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+      margin: 0.5rem;
+      cursor: pointer;
+    }
+    .btn-rsvp:hover {
+      background: #b7932d; /* darker gold */
+    }
   </style>
 </head>
-
 <body>
   <section class="hero">
     <h1 class="hero-title">Sharon & Jolo</h1>
-    <span class="chinese-accent">Celebrate with us!</span>
-    <p>誠摯地邀請您見證我們的婚禮，與我們一同分享這份喜悅。</p>
-    <p><strong>日期：</strong>2025年11月16日（星期日）中午12點</p>
-    <p><strong>地點：</strong>台中市 圓觀 </p>
+    <span class="chinese-accent">誠摯邀請您與我們一同見證幸福時刻</span>
+    <p>親愛的朋友們，我們誠摯地邀請您見證我們的婚禮，與我們一同分享這份喜悅。</p>
+    <p><strong>婚禮日期：</strong>2025年11月16日（星期日）中午12點</p>
+    <p><strong>地點：</strong>台中市 Palazzo</p>
 
     <div class="btn-group">
       <a href="rsvp.html" class="btn-rsvp">立即回覆</a>
